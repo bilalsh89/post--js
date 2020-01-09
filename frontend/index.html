@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <title>Page Title</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,300,600' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+  <div class="header">
+    <img  class="imge" src="images/icon-above-font.png" >
+  </div>
+
+  <div class="navbar">
+    <a id="Home" href="/">Home</a>
+    <a id="My Profile" href="/profile.html">My Profile</a>
+    <a href="#" class="logout right">Log out</a>
+  </div>
+
+  <div class="row">
+    <div class="side">
+      <img id="profilePic" src="images/personal-user-illustration-@2x.png" alt="" style="border-radius:50%" width="125" height="125">
+      <h2 id="userName">Maik Alosn </h2>
+    </div>
+    <div class="main">
+      <form class="post" action="/index.html" method="post">
+        <h2>New Post</h2>
+        <div class="field-wrap">
+          <label>
+            Text<span class="req">*</span>
+          </label>
+          <textarea rows="5" cols="20" id="post-text" required autocomplete="off" >
+          </textarea>
+        </div>
+
+        <div class="field-wrap">
+          <label>
+            Post image<span class="req">*</span>
+          </label>
+          <br/><br/>
+          <input type="file" name="postImage" id="postImage">
+        </div>
+        
+        <button type="submit" id="submit-post" class="button button-block">Submit Post</button>
+        
+        </form>
+        <div id="post-error" style=""></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <h6>Copyright © 2019 Bilalshahrour.fr</h6>
+  </div>
+
+
+  <!-- js here -->
+  <script src="js/lib/jquery-3.4.1.min.js"></script>
+  <script src="js/index.js"></script>
+  <!-- end js -->
+</body>
+
+</html>
